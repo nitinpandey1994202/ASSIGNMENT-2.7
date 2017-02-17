@@ -1,0 +1,67 @@
+ANS-A) 
+import java.util.Scanner;
+public class acad {
+public static void main(String args[]) {
+ StringBuffer sb = new StringBuffer(); 
+StringBuffer sb1 = new StringBuffer();
+Scanner sc =new Scanner(System.in); 
+ int a = sc.nextInt(); 
+ int b =sc.nextInt(); 
+for (int i = a; i <=b; i++) { 
+ if(i%2==0) 
+ { sb.append(i); sb.append(" "); 
+ else { sb1.append(i); sb1.append(" ");
+ } 
+ }
+ System.out.println("The even number are"); //print values in buffer sb System.out.println(sb.toString()); System.out.println("The odd number are"); //print values in buffer sb2 System.out.println(sb1.toString()); }
+
+} 
+
+ANS-B)
+import java.util.Scanner;
+
+public class acadgild {
+
+public static void main(String args[]) {
+ Scanner sc= new Scanner(System.in); 
+System.out.println("Input"); 
+int no = sc.nextInt(); 
+System.out.println("Output"); 
+for (int i = 1; i <=10; i++)
+ { System.out.println(no+"x"+i+"="+i*no); 
+
+}
+}
+}
+
+ANS-c)
+Method Overloading- If a class has multiple methods having same name but different in parameters, it is known as Method Overloading. it can be done be achieved by either changing data type or changing number of argument. Lets see by exanple
+
+Changing data type- here method named sum is used to perform addition of int type as well as string type of inputs. method performs the same action without errors
+
+import java.util.Scanner; public class acad2 { public static void sum(int a , int b) //create method sum sum two int { System.out.println(a+b);
+
+} public static void sum(String s ,String s1) //another method named sum for string { String s4 = s+s1; System.out.println(s4); }
+
+public static void main(String args[]) { Scanner sc= new Scanner(System.in);
+
+int a = sc.nextInt(); //scan input a as int
+int b = sc.nextInt(); //scan input b as int
+String st = sc.next(); //scan input st as string
+String st1 = sc.next(); //scam input st1 as string
+sum(a,b);//sum with integer type as input
+sum(st,st1);//  sum with String type as input
+}
+} 2.by changing number of arguments-here we passed two arguments to perform then changed it to three, the method run without errors.
+
+import java.util.Scanner; class acad2{
+static int add(int a,int b){return a+b;} //pass two arguments to operate on..case1 
+static int add(int a,int b,int c)
+{
+return a+b+c;
+}
+ public static void main(String[] args){
+System.out.println(acad2.add(11,15)); 
+System.out.println(acad2.add(11,15,19)); 
+}
+}
